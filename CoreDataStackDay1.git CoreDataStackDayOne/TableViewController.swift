@@ -11,7 +11,10 @@ import CoreData
 
 class TableViewController: UITableViewController {
 
+    
     var managedObjectContext: NSManagedObjectContext?
+    
+    var studnets = [Student]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +24,14 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        
     }
 
     @IBAction func buttonOnClick(sender: UIBarButtonItem) {
+        
+        
         
     }
     override func didReceiveMemoryWarning() {
@@ -35,23 +43,24 @@ class TableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return studnets.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
 
         // Configure the cell...
+        cell.textLabel?.text = studnets[indexPath.row].name
 
         return cell
     }
-    */
+  
 
     /*
     // Override to support conditional editing of the table view.

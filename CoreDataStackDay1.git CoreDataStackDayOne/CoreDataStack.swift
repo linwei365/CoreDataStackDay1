@@ -51,7 +51,7 @@ class CoreDataStack {
             
             print("failed to create store")
             
-            abort()
+//            abort()
         }
         
     }
