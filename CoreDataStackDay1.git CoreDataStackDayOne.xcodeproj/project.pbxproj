@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6580879D1C6CA7B6001CC814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580879C1C6CA7B6001CC814 /* AppDelegate.swift */; };
-		6580879F1C6CA7B6001CC814 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580879E1C6CA7B6001CC814 /* ViewController.swift */; };
 		658087A21C6CA7B6001CC814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658087A01C6CA7B6001CC814 /* Main.storyboard */; };
 		658087A51C6CA7B6001CC814 /* CoreDataStackDay1_git_CoreDataStackDayOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 658087A31C6CA7B6001CC814 /* CoreDataStackDay1_git_CoreDataStackDayOne.xcdatamodeld */; };
 		658087A71C6CA7B6001CC814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658087A61C6CA7B6001CC814 /* Assets.xcassets */; };
@@ -16,6 +15,10 @@
 		658087B51C6CA7B7001CC814 /* CoreDataStackDay1_git_CoreDataStackDayOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658087B41C6CA7B7001CC814 /* CoreDataStackDay1_git_CoreDataStackDayOneTests.swift */; };
 		658087C01C6CA7B7001CC814 /* CoreDataStackDay1_git_CoreDataStackDayOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658087BF1C6CA7B7001CC814 /* CoreDataStackDay1_git_CoreDataStackDayOneUITests.swift */; };
 		658087CE1C6E4470001CC814 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658087CD1C6E4470001CC814 /* CoreDataStack.swift */; };
+		658087D41C6E4C60001CC814 /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 658087D21C6E4C60001CC814 /* Data.xcdatamodeld */; };
+		658087D71C6E7208001CC814 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658087D51C6E7208001CC814 /* Student+CoreDataProperties.swift */; };
+		658087D81C6E7208001CC814 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658087D61C6E7208001CC814 /* Student.swift */; };
+		658087DA1C6E73E0001CC814 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658087D91C6E73E0001CC814 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* Begin PBXFileReference section */
 		658087991C6CA7B6001CC814 /* CoreDataStackDay1.git CoreDataStackDayOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreDataStackDay1.git CoreDataStackDayOne.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6580879C1C6CA7B6001CC814 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6580879E1C6CA7B6001CC814 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		658087A11C6CA7B6001CC814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		658087A41C6CA7B6001CC814 /* CoreDataStackDay1_git_CoreDataStackDayOne.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataStackDay1_git_CoreDataStackDayOne.xcdatamodel; sourceTree = "<group>"; };
 		658087A61C6CA7B6001CC814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		658087BF1C6CA7B7001CC814 /* CoreDataStackDay1_git_CoreDataStackDayOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackDay1_git_CoreDataStackDayOneUITests.swift; sourceTree = "<group>"; };
 		658087C11C6CA7B7001CC814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		658087CD1C6E4470001CC814 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		658087D31C6E4C60001CC814 /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
+		658087D51C6E7208001CC814 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Student+CoreDataProperties.swift"; path = "../Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		658087D61C6E7208001CC814 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Student.swift; path = ../Student.swift; sourceTree = "<group>"; };
+		658087D91C6E73E0001CC814 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,13 @@
 		6580879B1C6CA7B6001CC814 /* CoreDataStackDay1.git CoreDataStackDayOne */ = {
 			isa = PBXGroup;
 			children = (
+				658087D51C6E7208001CC814 /* Student+CoreDataProperties.swift */,
+				658087D61C6E7208001CC814 /* Student.swift */,
 				6580879C1C6CA7B6001CC814 /* AppDelegate.swift */,
-				6580879E1C6CA7B6001CC814 /* ViewController.swift */,
 				658087A01C6CA7B6001CC814 /* Main.storyboard */,
+				658087D91C6E73E0001CC814 /* TableViewController.swift */,
 				658087CD1C6E4470001CC814 /* CoreDataStack.swift */,
+				658087D21C6E4C60001CC814 /* Data.xcdatamodeld */,
 				658087A61C6CA7B6001CC814 /* Assets.xcassets */,
 				658087A81C6CA7B6001CC814 /* LaunchScreen.storyboard */,
 				658087AB1C6CA7B6001CC814 /* Info.plist */,
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6580879F1C6CA7B6001CC814 /* ViewController.swift in Sources */,
+				658087D71C6E7208001CC814 /* Student+CoreDataProperties.swift in Sources */,
+				658087DA1C6E73E0001CC814 /* TableViewController.swift in Sources */,
 				658087A51C6CA7B6001CC814 /* CoreDataStackDay1_git_CoreDataStackDayOne.xcdatamodeld in Sources */,
+				658087D41C6E4C60001CC814 /* Data.xcdatamodeld in Sources */,
 				6580879D1C6CA7B6001CC814 /* AppDelegate.swift in Sources */,
+				658087D81C6E7208001CC814 /* Student.swift in Sources */,
 				658087CE1C6E4470001CC814 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +531,16 @@
 			);
 			currentVersion = 658087A41C6CA7B6001CC814 /* CoreDataStackDay1_git_CoreDataStackDayOne.xcdatamodel */;
 			path = CoreDataStackDay1_git_CoreDataStackDayOne.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		658087D21C6E4C60001CC814 /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				658087D31C6E4C60001CC814 /* Data.xcdatamodel */,
+			);
+			currentVersion = 658087D31C6E4C60001CC814 /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
