@@ -56,6 +56,27 @@ class CoreDataStack {
         
     }
     
+    // 6
+    func save () {
+        var err: NSError?
+        do {
+            try  mangedObjectContext?.save()
+            
+        } catch let error1 as NSError {
+            err = error1
+            
+            
+        }
+        if (err != nil){
+            
+            print("failed to create store")
+            
+            abort()
+        }
+
+        
+    }
+    
     
     //4
     
